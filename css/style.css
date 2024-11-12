@@ -112,6 +112,7 @@ button.myBtn {
     cursor: pointer;
 }
 
+
 .bonXusdugagotNa2Vnt-trust-area {
     display: flex;
     align-items: center;
@@ -436,6 +437,10 @@ button.myBtn {
     padding: 4px;
     font-weight: 400;
     text-align: center;
+}
+
+.bonXusdugagotNa2Vnt-bonus-bottom-offer > p > button {
+    font-size: 10px;
 }
 /* ------------------------------------
     List Table Section End
