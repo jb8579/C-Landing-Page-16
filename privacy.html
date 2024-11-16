@@ -184,5 +184,32 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+            // Function to toggle 'Read more' and 'Read less'
+            function toggleReadMore(button) {
+                var parent = button.parentElement;
+                var dots = parent.querySelector('.dots');
+                var moreText = parent.querySelector('.more');
+
+                // Toggle between showing and hiding the additional text
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    button.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    button.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                }
+            }
+
+            // Attach event listeners to all 'Read more' buttons
+            document.querySelectorAll('.myBtn').forEach(function(button) {
+                button.addEventListener('click', function() {
+                    toggleReadMore(button);
+                });
+            });
+
+          </script>
     </body>
 </html>
